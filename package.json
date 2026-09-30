@@ -12,5 +12,15 @@
   "dependencies": {
     "axios": "^1.20.0",
     "express": "^5.2.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fawwaz710/122_WeatheAPI.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Fawwaz710/122_WeatheAPI/issues"
+  },
+  "homepage": "https://github.com/Fawwaz710/122_WeatheAPI#readme"
 }
