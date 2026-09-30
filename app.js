@@ -8,4 +8,18 @@ const PORT = 3000;
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/api/lokasi", async (req, res) => {
+    try {
+        const response = await axios.get(url);
+        console.log(response.data);
+
+        const data = response.data;
+
+        const lokasi = data.features[0].matching_text;
+        const koordinat = data.features[0].geometry.coordinates;
+
+        res.json({
+            kota: lokasi,
+            koordinat: koordinat
+        });
+
 
